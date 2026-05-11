@@ -10,3 +10,9 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v7
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v7
+        with:
+         name: Cypress Test Reports
+         path: cypress/reports/html # or path/to/artifact
