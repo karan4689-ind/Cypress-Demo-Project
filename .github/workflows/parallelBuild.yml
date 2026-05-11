@@ -12,6 +12,12 @@ jobs:
         uses: cypress-io/github-action@v7
         with:
             command: npm run tests:e2e
+      - name: Upload artifacts
+        if: always() # Ensure this step runs even if previous steps fail
+        uses: actions/upload-artifact@v7
+        with:
+         name: Cypress Test Reports - Regression
+         path: cypress/reports/html # or path/to/artifact      
 
   Sanity-Test-run:
      runs-on: ubuntu-24.04
@@ -23,5 +29,12 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v7
         with:
-            command: npm run tests:sanity         
+            command: npm run tests:sanity
+            
+      - name: Upload artifacts
+        if: always() # Ensure this step runs even if previous steps fail
+        uses: actions/upload-artifact@v7
+        with:
+         name: Cypress Test Reports - Sanity
+         path: cypress/reports/html # or path/to/artifact      
        
