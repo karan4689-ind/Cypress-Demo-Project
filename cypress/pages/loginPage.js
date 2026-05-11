@@ -1,7 +1,7 @@
 export class loginPage{
     weblocators = {
         searchBox:'.form-control.input-lg',
-        searchButton: '.btn.btn-default.btn-lg1',
+        searchButton: '.btn.btn-default.btn-lg',
         successMsg: '.alert.alert-success.alert-dismissible'
     }
 
