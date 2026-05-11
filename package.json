@@ -16,7 +16,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tests:e2e": "npx cypress run --spec cypress/e2e/test/loginFlow.cy.js"
+    "tests:e2e": "npx cypress run --spec cypress/e2e/test/loginFlow.cy.js",
+    "tests:sanity": "npx cypress run --spec cypress/e2e/test/registrationFlow.cy.js"
   },
   "dependencies": {
     "cypress": "^15.14.2"
