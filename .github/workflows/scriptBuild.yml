@@ -1,4 +1,4 @@
-name: Sanity Run
+name: Sanity Test Build
 on: push
 jobs:
   cypress-run:
