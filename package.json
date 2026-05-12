@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "test1": "echo \"Error: no test specified\" && exit 1",
-    "tests:e2e": "npx cypress run --spec cypress/e2e/test/loginFlow.cy.js",
+    "tests:e2e": "npx cypress run --spec cypress/e2e/test/loginFlow.cy.js --record --key fd0371d7-b971-4e53-b88e-7023dbedd7bb",
     "tests:sanity": "npx cypress run --spec cypress/e2e/test/registrationFlow.cy.js",
     "test":"npx cypress run --record --key fd0371d7-b971-4e53-b88e-7023dbedd7bb"
   },
