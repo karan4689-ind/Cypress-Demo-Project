@@ -10,6 +10,8 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v7
+        with:
+          command: npm run test
 
       - name: Upload artifacts
         if: always() # Ensure this step runs even if previous steps fail
