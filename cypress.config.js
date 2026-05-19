@@ -5,6 +5,7 @@ module.exports = defineConfig({
   projectId: "h6yg6x",
 
   e2e: {
+    experimentalPromptCommand: true,
     reporter: 'cypress-mochawesome-reporter',
     baseUrl: "https://naveenautomationlabs.com/opencart/index.php?route=account/login",
     setupNodeEvents(on, config) {
